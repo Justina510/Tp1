@@ -1,0 +1,124 @@
+:root{
+    --blanco:#f7f7f7;
+    --violeta:#a22887;
+    --amarillo: #f5a801;
+    --magenta:#e6007e;
+    --verde:#7eba27;
+    --cian:#009bac; 
+}
+
+/*--------body---------*/
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--cian);
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+/*-------textos---------*/
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+form {
+    width: 50%;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-bottom: 110px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 15px;
+    border: 2px solid var(--verde);
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 100px;
+}
+
+/*--------botoncito----------*/
+
+.boton{
+    background-color: var(--violeta);
+    border-radius: 10px;
+    padding: 10px 20px;
+    border: none;
+    color: var(--blanco);
+}
+
+.boton:hover{
+    background-color: var(--magenta);
+}
+
+/*--------mensaje---------*/
+
+
+.mensaje-enviado {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--verde);
+    color: var(--blanco);
+    padding: 10px 20px;
+    border-radius: 5px;
+    z-index: 999;
+}
+
+.mensaje-enviado:target {
+    display: block;
+}
+
+/*-------piesito----------*/
+
+
+.footer {
+    background-color: var(--violeta); 
+    color: var(--amarillo);
+    padding: 50px 0; 
+  }
+  
+  .contenedor {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 20px;
+  }
+  
+  .texto-atencion {
+    text-align: center;
+  }
+  
+  .texto-atencion h2 {
+    font-size: 24px; 
+    margin-bottom: 20px;
+  }
+  
+  .texto-atencion p {
+    font-size: 16px; 
+    line-height: 1.6; 
+  }
