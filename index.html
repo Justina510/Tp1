@@ -24,21 +24,25 @@
         México es un país entre los Estados Unidos y América Central, conocido por las playas en el Pacífico y el golfo de México, y su diverso paisaje de montañas, desiertos y selvas. Las ruinas antiguas, como Teotihuacán y la ciudad maya de Chichén Itzá, se distribuyen por el país, al igual que las ciudades de la época colonial española. En la capital Ciudad de México, las elegantes tiendas, los famosos museos y los restaurantes gourmet son parte de la vida moderna.
     </div>
 
-
     <div class="botones">
-      <button class="icono-animado" onclick="scrollToSection('seccion-amarilla')"><img src="/Imagenes/plato.gif" alt="Icono animado2">
+      <a href="#seccion-amarilla" class="icono-animado">
+        <img src="/Imagenes/plato.gif" alt="Icono animado2">
         <span>Gastronomia</span>
-      </button>
-      <button class="icono-animado" onclick="scrollToSection('seccion-cian')"><img src="/Imagenes/signo-de-hotel.gif" alt="Icono animado1">
+      </a>
+      <a href="#seccion-cian" class="icono-animado">
+        <img src="/Imagenes/signo-de-hotel.gif" alt="Icono animado1">
         <span>Hospedaje</span>
-      </button>
-      <button class="icono-animado" onclick="scrollToSection('seccion-magenta')"><img src="/Imagenes/historia.gif" alt="Icono animado3">
+      </a>
+      <a href="#seccion-magenta" class="icono-animado">
+        <img src="/Imagenes/historia.gif" alt="Icono animado3">
         <span>Cultura</span>
-      </button>
-      <button class="icono-animado" onclick="scrollToSection('Seccion-verde')"><img src="/Imagenes/galeria-de-fotos.gif" alt="Icono animado4">
+      </a>
+      <a href="#Seccion-verde" class="icono-animado">
+        <img src="/Imagenes/galeria-de-fotos.gif" alt="Icono animado4">
         <span>Galeria</span>
-      </button>
+      </a>
     </div>
+    
 
     <div class="seccion-amarilla" id="seccion-amarilla">
       <img src="/Imagenes/comida-mexicana.jpg" alt="Imagen 1">
@@ -99,11 +103,7 @@
     </div>
   </div>
 
-  <script>
-    function scrollToSection(sectionId) {
-      document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
-    }
-  </script>
+
 
 <footer class="footer">
   <div class="contenedor">
