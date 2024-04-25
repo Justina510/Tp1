@@ -69,22 +69,27 @@ p {
 .botones{
   display: flex;
   flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center; 
 }
+
 
 .icono-animado{
   display: flex;
-  flex-direction: row;
   align-items: center;
   justify-content: center;
-  padding: 8% 5%;
+  padding: 10px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+  width: 100%; 
+  max-width: 150px;
+  margin: 10px;
 }
-
 .icono-animado img {
-  width: 70%;
-  margin-right: 8px;
+  width: 50%;
+  max-width: 100px; 
+  margin-right: 5px;
 }
 
 .icono-animado span {
